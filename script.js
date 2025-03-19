@@ -13,3 +13,10 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
+
+/*Displaying book titles using loops*/
+
+// let bookCardTitles = document.querySelectorAll(".book-card-book-title");
+// bookCardTitles.forEach((book) => {
+//   console.log(book.innerText);
+// });
