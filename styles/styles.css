@@ -230,7 +230,8 @@ main {
 .homepage-book-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  flex-direction: column;
+  gap: 36px;
 }
 
 .shortened-blurb {
