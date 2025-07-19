@@ -6,7 +6,7 @@
 
 Bukksa is my self-led passion project: an online book library app inspired by my favourite hobby - reading. It's designed as a long-term project that evolves alongside my growth as a developer.
 
-This app is more than just a portfolio piece — it's a sandbox where I apply and reinforce what I’m learning, from JavaScript fundamentals to front-end frameworks like React (coming soon!).
+This app is more than just a portfolio piece - it's a sandbox where I apply and reinforce what I’m learning, from JavaScript fundamentals to front-end frameworks like React (coming soon!).
 
 **Link to project:** [Bukksa](https://bukksa.com/)
 
