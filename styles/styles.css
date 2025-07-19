@@ -147,6 +147,7 @@ main {
   font-family: "Parkinsans", sans-serif;
   transition: 300ms ease-in-out;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .branded-button-dark {
@@ -230,7 +231,6 @@ main {
 .homepage-book-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  flex-direction: column;
   gap: 36px;
 }
 
