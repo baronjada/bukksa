@@ -3,6 +3,7 @@
   --secondary-colour: #f2f0ef;
   --accent-colour: #e6d7ff;
   --text-colour: #040426;
+  --transparent: #ffffff00;
 }
 
 * {
@@ -36,6 +37,12 @@ h2 {
 h3 {
   font-family: "Libre Baskerville", serif;
   font-size: 28px;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -170,6 +177,24 @@ main {
   color: var(--secondary-colour);
 }
 
+.branded-button-full-width-outline {
+  color: var(--primary-colour);
+  background-color: var(--transparent);
+  padding: 12px 24px;
+  border: 2px solid var(--primary-colour);
+  border-radius: 24px;
+  font-family: "Parkinsans", sans-serif;
+  transition: 300ms ease-in-out;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.branded-button-full-width-outline:hover {
+  background-color: var(--primary-colour);
+  color: var(--secondary-colour);
+}
+
 /**End of - Reusable button styles**/
 
 .book-card-component {
@@ -211,6 +236,11 @@ main {
 .book-card-author-name {
   font-size: 18px;
   font-weight: 400;
+  text-align: start;
+}
+
+.book-card-author-name::before {
+  content: "by ";
 }
 
 .book-title-and-author {
@@ -357,4 +387,59 @@ main {
   .book-card-blurb {
     margin: 0 0 12px 0;
   }
+}
+
+dialog {
+  margin: 0 auto;
+  padding: 44px;
+  align-items: center;
+  border: none;
+  border-radius: 14px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: auto;
+  transition: opacity 1s ease-in, background-color 1s ease-in,
+    display 1s ease-in;
+  transition-behavior: allow-discrete;
+}
+
+@starting-style {
+  dialog {
+    opacity: 0;
+  }
+}
+
+dialog:not([open]) {
+  opacity: 0;
+}
+
+.book-details-container {
+  display: flex;
+  column-gap: 96px;
+}
+
+.book-details-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 38px;
+  width: 440px;
+}
+
+.book-details-content p {
+  text-align: start;
+}
+
+.book-details-cover-image img {
+  height: 540px;
+}
+
+.book-status-buttons-container {
+  display: flex;
+  gap: 18px;
+  width: 100%;
+}
+
+.book-status-buttons-container button {
+  flex-grow: 1;
 }
