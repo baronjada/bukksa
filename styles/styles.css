@@ -269,6 +269,7 @@ main {
 
 dialog {
   margin: 0 auto;
+  max-width: 900px;
   padding: 44px;
   align-items: center;
   border: none;
@@ -292,7 +293,7 @@ dialog:not([open]) {
 
 .book-details-container {
   display: flex;
-  column-gap: 96px;
+  gap: 64px;
 }
 
 .book-details-content {
@@ -301,7 +302,6 @@ dialog:not([open]) {
   align-items: flex-start;
   justify-content: center;
   row-gap: 38px;
-  width: 440px;
 }
 
 .book-details-content p {
@@ -414,7 +414,7 @@ dialog:not([open]) {
   }
 }
 
-/**Tablet/Mobile Landscape**/
+/**Tablet**/
 @media (max-width: 1260px) {
   .homepage-book-cards {
     grid-template-columns: 1fr;
@@ -423,6 +423,35 @@ dialog:not([open]) {
   .book-card-component {
     width: 880px;
     gap: 32px;
+  }
+
+  .book-details-container {
+    gap: 44px;
+  }
+
+  dialog {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 990px) {
+  .book-details-container {
+    flex-direction: column;
+  }
+}
+
+/**Mobile Landscape**/
+@media (max-width: 880px) {
+  .book-status-buttons-container {
+    flex-direction: column;
+  }
+
+  dialog {
+    padding: 28px 18px;
+  }
+
+  .book-details-cover-image img {
+    max-width: 100%;
   }
 }
 
