@@ -451,7 +451,7 @@ dialog:not([open]) {
     width: 100%;
   }
 
-  .book-card-cover-image {
-    width: 100%;
+  .book-card-cover-image img {
+    max-width: 100%;
   }
 }
