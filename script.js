@@ -1,8 +1,6 @@
 const bookCardBlurbs = document.querySelectorAll(".book-card-blurb");
 bookCardBlurbs.forEach((blurb) =>
-  blurb.addEventListener("click", () =>
-    blurb.classList.toggle("shortened-blurb")
-  )
+  blurb.addEventListener("click", () => blurb.classList.add("shortened-blurb"))
 );
 
 const hamburger = document.querySelector(".hamburger");
