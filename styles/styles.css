@@ -432,6 +432,7 @@ dialog:not([open]) {
 
   .book-card-component {
     width: 880px;
+    gap: 32px;
   }
 }
 
