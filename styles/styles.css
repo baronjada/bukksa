@@ -202,8 +202,8 @@ main {
   border-radius: 14px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
-  width: 660px;
-  height: auto;
+  width: 100%;
+  max-width: 660px;
   padding: 24px 32px;
   gap: 48px;
 }
