@@ -51,11 +51,6 @@ a {
   color: var(--text-colour);
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 /**Nav styling**/
 
 .navbar {
@@ -232,11 +227,6 @@ main {
 .book-card-book-title {
   font-size: 28px;
   margin-bottom: 8px;
-  overflow: hidden;
-  line-clamp: 3;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
 }
 
 .book-card-author-name {
