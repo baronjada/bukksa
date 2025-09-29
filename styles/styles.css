@@ -447,7 +447,7 @@ dialog:not([open]) {
   }
 
   dialog {
-    padding: 28px 18px;
+    padding: 22px;
   }
 
   .book-details-cover-image img {
