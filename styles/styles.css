@@ -326,7 +326,7 @@ dialog:not([open]) {
   flex-grow: 1;
 }
 
-/**Tablet**/
+/**Small desktops/laptop**/
 @media (max-width: 1480px) {
   h1 {
     font-size: 72px;
@@ -342,7 +342,7 @@ dialog:not([open]) {
 
   .book-card-component {
     padding: 44px 32px;
-    width: 580px;
+    max-width: 580px;
   }
 
   .book-card-content {
@@ -417,6 +417,7 @@ dialog:not([open]) {
   }
 }
 
+/**Tablet/Mobile Landscape**/
 @media (max-width: 1260px) {
   .homepage-book-cards {
     grid-template-columns: 1fr;
@@ -427,9 +428,23 @@ dialog:not([open]) {
   }
 }
 
-@media all and (max-width: 940px) {
+/**Mobile Portrait**/
+@media (max-width: 720px) {
   .book-card-component {
     flex-direction: column;
-    width: 500px;
+    max-width: 340px;
+    padding: 24px 28px;
+  }
+
+  .book-card-content {
+    row-gap: 14px;
+  }
+
+  .view-book-button {
+    width: 100%;
+  }
+
+  .book-card-cover-image {
+    width: 100%;
   }
 }
