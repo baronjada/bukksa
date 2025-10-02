@@ -466,6 +466,10 @@ dialog:not([open]) {
 
 /**Mobile Landscape**/
 @media (max-width: 880px) {
+  .navbar {
+    padding: 0 26px;
+  }
+
   .newness-book-cards,
   .rr-book-grid {
     grid-template-columns: 1fr;
