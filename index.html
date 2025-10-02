@@ -25,10 +25,10 @@
             <li class="nav-item nav-hover-underline-animation">
               <a href="/">Home</a>
             </li>
-            <li class="nav-item nav-hover-underline-animation">Your Shelves</li>
-            <li class="nav-item nav-hover-underline-animation">
-              Newness For You
-            </li>
+            <li class="nav-item nav-hover-underline-animation">Your shelves</li>
+            <li class="nav-item nav-hover-underline-animation">Discover</li>
+            <li class="nav-item nav-hover-underline-animation">Read my mind</li>
+            <li class="nav-item nav-hover-underline-animation">Community</li>
           </ul>
           <i class="fa-regular fa-circle-user"></i>
         </div>
@@ -40,8 +40,9 @@
       </nav>
     </header>
     <main>
-      <div class="homepage-books-container">
-        <section class="homepage-book-cards">
+      <div class="newness-container">
+        <h2>Trending reads</h2>
+        <section class="newness-book-cards">
           <div class="book-card-component">
             <div class="book-card-content">
               <div class="book-title-and-author">
@@ -163,7 +164,9 @@
                 their marriage.
               </p>
               <div class="book-status-buttons-container">
-                <button class="branded-button-light">Add book to TBR</button>
+                <button class="branded-button-light">
+                  Add book to TBR shelf
+                </button>
                 <button class="branded-button-dark">Mark as read</button>
               </div>
               <button
@@ -181,6 +184,7 @@
           </div>
         </dialog>
       </div>
+      <!-- V2: 'Recent Rotation' books built with array -->
     </main>
     <script src="script.js"></script>
   </body>
