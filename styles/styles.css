@@ -53,12 +53,16 @@ a {
 
 /**Nav styling**/
 
-.navbar {
+.nav-container {
   background-color: var(--accent-colour);
-  text-align: center;
   display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  width: 1440px;
   min-height: 140px;
-  padding: 0 44px;
   justify-content: space-between;
   align-items: center;
 }
@@ -384,6 +388,10 @@ dialog:not([open]) {
 
   main {
     padding: 64px 44px;
+  }
+
+  .nav-menu {
+    gap: 38px;
   }
 
   .navbar {
