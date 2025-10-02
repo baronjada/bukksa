@@ -452,11 +452,15 @@ dialog:not([open]) {
   }
 
   .book-details-container {
-    gap: 44px;
+    gap: 0;
   }
 
   dialog {
     max-width: 80vw;
+  }
+
+  .book-details-cover-image img {
+    display: none;
   }
 }
 
@@ -471,11 +475,15 @@ dialog:not([open]) {
   }
 
   dialog {
-    padding: 22px;
+    padding: 26px;
   }
 
   .book-details-cover-image img {
     max-width: 100%;
+  }
+
+  main {
+    padding: 44px 26px;
   }
 }
 
@@ -483,7 +491,7 @@ dialog:not([open]) {
 @media (max-width: 720px) {
   .book-card-component {
     flex-direction: column;
-    padding: 24px 28px;
+    padding: 32px 28px;
   }
 
   .book-card-content {
